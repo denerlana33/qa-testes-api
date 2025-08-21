@@ -1,25 +1,29 @@
-# qa-testes-api
+# 🧪 QA Testes de API
 
-Testes de API usando Python, Pytest e [Reqres](https://reqres.in).
+Projeto de automação de testes de API utilizando **Python**, **pytest** e **FastAPI**.
 
----
+## 📚 Descrição
 
-## 🚀 Objetivo
+Este repositório contém:
 
-Automatizar testes de API REST simulando requisições reais contra o serviço público Reqres.
+- Testes automatizados para API pública [reqres.in](https://reqres.in)
+- Uma API local criada com FastAPI para simular endpoints
+- Casos de teste positivos e negativos
+- Execuções com Postman e integração via pytest
 
----
+## 🚀 Tecnologias e Ferramentas
 
-## 🧪 Testes implementados
+- Python 3.13+
+- FastAPI
+- Uvicorn
+- Pytest
+- Requests
+- Postman (para testes manuais)
 
-- `GET /users?page=2` → deve retornar status **200** e uma lista de usuários.
-- `GET /users/2` → deve retornar status **200** e usuário com ID 2.
-- `GET /users/23` → deve retornar status **404** (usuário não encontrado).
+## 🏁 Como executar o projeto localmente
 
----
+### 1. Clone o repositório
 
-## 🛠 Como rodar os testes
-
-### 1. Instalar dependências
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/denerlana33/qa-testes-api.git
+cd qa-testes-api
