@@ -1,8 +1,13 @@
+import pytest
 import requests
 
 headers = {
     "x-api-key": "reqres-free-v1"
 }
+
+@pytest.fixture
+def base_url():
+    return "https://reqres.in/api"
 
 def test_list_users(base_url):
     response = requests.get(f"{base_url}/users?page=2", headers=headers)
